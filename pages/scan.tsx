@@ -42,7 +42,12 @@ export default function Scan() {
 
   return (
     <div className={classes.container}>
-      <Camera isFullscreen isSilentMode onTakePhoto={handleTakePhoto} />
+      <Camera
+        isFullscreen
+        isSilentMode
+        idealFacingMode="environment"
+        onTakePhoto={handleTakePhoto}
+      />
     </div>
   );
 }
